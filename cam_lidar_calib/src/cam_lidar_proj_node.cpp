@@ -618,14 +618,10 @@ public:
                             
                             l_y_max[k]=Y;
                             distance[k]=pointCloud_L[0];  //x값 거리
-                            /*
-                            sf_x[k] = pointCloud_L[1];  //라이다에서는 y(가로)
-                            sf_y[k] = pointCloud_L[2];  //라이다에서는 z(세로)
-                            sf_z[k] = pointCloud_L[0];  //라이다에서는 x(거리)
-                            */
-                            sf_x[k] = pointCloud_L[0];  //라이다에서는 y(가로)
-                            sf_y[k] = pointCloud_L[1];  //라이다에서는 z(세로)
-                            sf_z[k] = pointCloud_L[2];  //라이다에서는 x(거리)
+
+                            sf_x[k] = pointCloud_L[0];  
+                            sf_y[k] = pointCloud_L[1];  
+                            sf_z[k] = pointCloud_L[2];  
 
                             pub_id[k] = detect_msg->class_id[k];
                         }
